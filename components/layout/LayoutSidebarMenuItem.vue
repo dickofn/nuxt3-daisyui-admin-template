@@ -46,7 +46,7 @@
               @click="onLinkClick(subMenu)"
               :to="subMenu.link"
               class="group flex w-full items-center rounded-lg p-2 pl-11"
-              :class="{ active: isActiveSubmenu(subMenu.link) }"
+              :class="{ 'text-primary': isActiveSubmenu(subMenu.link) }"
             >
               {{ subMenu.label }}
             </NuxtLink>
